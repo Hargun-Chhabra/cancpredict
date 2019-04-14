@@ -1,0 +1,25 @@
+{% extends "basicheader.html" %}
+{% block body %}
+
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <form method="POST" action="/shutdown", class="was-validated">
+  <div class="form-group">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3" style="color: MediumSeaGreen">Cancer Prediction</h1>
+      <p style="color: MediumSeaGreen">This cancer prediction model predicts cancer using three models ensembled together.</p>
+      <p style="color: MediumSeaGreen">Our goal is that a patient can be assured that wether he needs second consultancy or not.</p>
+    </div>
+  </div>
+<form method="POST" action="/shutdown", class="was-validated">
+ 
+  <div class="form-group">
+    <label for="usr" ><h2>Result is:{{ val }}</h2></label>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">shut down and try again</button>
+</form>
+
+{% endblock %}

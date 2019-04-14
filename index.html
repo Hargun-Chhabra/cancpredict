@@ -1,0 +1,117 @@
+
+
+{% extends "basicheader.html" %}
+{% block body %}
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3" style="color: MediumSeaGreen">Cancer Prediction</h1>
+      <p style="color: MediumSeaGreen">This cancer prediction model predicts cancer using three models ensembled together.</p>
+      <p style="color: MediumSeaGreen">Our goal is that a patient can be assured that wether he needs second consultancy or not.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <form method="POST" action="/send", class="was-validated">
+  <div class="form-group">
+    <label for="usr"><h3>Radius_mean:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Rmean" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+   <div class="form-group">
+    <label for="usr"><h3>Radius_se:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Rse" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Radius_worst:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Rworst" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Texture_mean:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Tmean" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Texture_se:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Tse" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Texture_worst:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Tworst" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Perimeter_mean:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Pmean" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Perimeter_se:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Pse" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Perimeter_worst:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Pworst" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Area_mean:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Amean" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Area_se:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Ase" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="usr"><h3>Area_worst:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="Aworst" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+  </div> <!-- /container -->
+
+</main>
+
+
+{% endblock %}
