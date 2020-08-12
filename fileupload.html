@@ -1,0 +1,35 @@
+
+
+{% extends "basicheader.html" %}
+{% block body %}
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3" style="color: MediumSeaGreen">Cancer Prediction</h1>
+      <p style="color: MediumSeaGreen">This cancer prediction model predicts cancer using three models ensembled together.</p>
+      <p style="color: MediumSeaGreen">Our goal is that a patient can be assured that wether he needs second consultancy or not.</p>
+    </div>
+  </div>
+
+<div class="container">
+    <!-- Example row of columns -->
+
+
+<form action="upload" method="POST" enctype="multipart/form-data" id="upload-form" >
+    <input type="file" name="imagefile" placeholder="Enter details" id="imagefile" required>
+    <input type="submit" />
+</form>
+
+
+
+</div> <!-- /container -->
+
+</main>
+
+
+{% endblock %}
+
+
